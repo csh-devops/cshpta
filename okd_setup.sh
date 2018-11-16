@@ -35,7 +35,7 @@ sudo yum -y install http://cbs.centos.org/kojifiles/packages/ansible/2.6.5/1.el7
 
 # Setting Public IP and Hostname
 #sudo echo 'okdsrv' | sudo tee --append /etc/hostname
-sudo echo '3.8.112.203   okdsrv' | sudo tee --append /etc/hosts
+sudo echo '35.176.235.103   okdsrv' | sudo tee --append /etc/hosts
 sudo hostnamectl set-hostname okdsrv
 
 # Reboot the server and run the below manually
