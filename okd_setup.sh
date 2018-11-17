@@ -12,7 +12,7 @@
 # Run the below manaully
 # Setting Repos and Updating OS
 sudo yum -y update
-sudo yum -y install wget git
+sudo yum -y install wget git screen
 sudo wget https://storage.googleapis.com/origin-ci-test/releases/openshift/origin/master/origin.repo -O /etc/yum.repos.d/origin.repo
 sudo yum -y install epel-release
 sudo yum-config-manager --enable epel
@@ -35,11 +35,12 @@ sudo yum -y install http://cbs.centos.org/kojifiles/packages/ansible/2.6.5/1.el7
 
 # Setting Public IP and Hostname
 #sudo echo 'okdsrv' | sudo tee --append /etc/hostname
-sudo echo '35.176.235.103   okdsrv' | sudo tee --append /etc/hosts
+#sudo echo '35.177.53.33   okdsrv' | sudo tee --append /etc/hosts
 sudo hostnamectl set-hostname okdsrv
 
 # Reboot the server and run the below manually
 # Cloning Openshift-Ansible Repo and Installing a Simple all-in-one okd cluster
+screen
 git clone https://github.com/openshift/openshift-ansible
 cd openshift-ansible
 sudo ansible-playbook -i inventory/hosts.localhost playbooks/prerequisites.yml
