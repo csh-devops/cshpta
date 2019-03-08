@@ -1,0 +1,9 @@
+deploy:
+  provider: openshift
+  user: RobertOngom@gmail.com
+  password:
+    secure: mQTNIMsoPg9OYSRk+8pt8v7wfHsqCuXzINl2W18eB1J08jwKwvmFAjQpOlVY0QM/aZA1gHq9FlfwN26SAC4698YRnszSMNVgnd+beNGk5+ENv6TOQXxibVuCkJSqUieYPSPCKkJDbVfM0MSIIH6Ni8WBNad0gdAJ5Ugfr7uLVRF0ES2siB1bG2wyotlmxkXrV8/8zEj0zoXg5bYCVXi/A+uiszwTvJRom7uCZchZ6MbSdi2gspr6Fz1zaVq5GksqpQUer+5eDx6P5ERWq5l/QFRQKNcQBU4F/aIIqBOypc0cpg2xPNQIax/ujqEE1hXkbrHo6TcHuGoIRSN0czQAV+XbdoIM/mhdbP/rg7oAlF8cWnbfrtpjDMZyrtPS5l4phHlHhg4SK2MKJpkl+WV1VgXcd5To+T3nCyzelZyjb+FIU4DnPdDTDgV18haVN5cS+HQlS/jQ/Z4LkR22KJ5jYPDq4PFME3205QWXmm0PQc+3DlbAzHaHxKFXNHcjQA7caRMRdMzj3354UvKMe6dKL/jC/MwLyShbHjVzMaeN0v9YOuazjtoYjubR/iTrUDKYzdEdgHJK9Yj9grmTRs90cOD0k7YFWyIMcLwK1rKv+q55SXgIF9V0yR+HATnzxcGvRdOdO3cR6tjjCPlvVb9lhl2yS+51kH6NUjTjHsGgT88=
+  app: cshpta
+  domain: houseofbob.co.za
+  on:
+    repo: csh-devops/cshpta

@@ -1,5 +1,0 @@
-deploy:
-  provider: openshift
-  user: "RobertOngom@gmail.com"
-  password: "0p3nSh!ft" # can be encrypted
-  domain: "https://boondocks.houseofbob.co.za:8443"
